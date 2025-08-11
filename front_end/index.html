@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Carbook - Free Bootstrap 4 Template by Colorlib</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+  <style>
+    select.form-control {
+      color: #000 !important;
+      background-color: #fff !important;
+    }
+
+    select.form-control option {
+      color: #000 !important;
+      background-color: #fff !important;
+    }
+  </style>
+</head>
+  </head>
+  <body>
+    
+	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Car<span>Book</span></a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+	          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+	          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+	          <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+	          <li class="nav-item"><a href="car.html" class="nav-link">Cars</a></li>
+	       
+	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+            <li class="nav-item"><a href="register.html" class="nav-link">Register</a></li>
+            <li class="nav-item" id="logoutNav" style="display:none;">
+              <a href="#" id="logoutBtn" class="nav-link">Logout</a>
+            </li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+    
+    <div class="hero-wrap ftco-degree-bg" style="background-image: url('images/bg_1.jpg');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text justify-content-start align-items-center justify-content-center">
+          <div class="col-lg-8 ftco-animate">
+          	<div class="text w-100 text-center mb-md-5 pb-md-5">
+	            <h1 class="mb-4">Fast &amp; Easy Way To Rent A Car</h1>
+	            <p style="font-size: 18px;">Welcome to Carbook, your trusted partner in car rental services. Founded with a vision to simplify travel, we provide reliable, affordable, and flexible vehicle rental solutions for individuals, families, and businesses</p>
+	            <a href="https://vimeo.com/45830194" class="icon-wrap popup-vimeo d-flex align-items-center mt-4 justify-content-center">
+	            	<div class="icon d-flex align-items-center justify-content-center">
+	            		<span class="ion-ios-play"></span>
+	            	</div>
+	            	<div class="heading-title ml-5">
+		            	<span>Easy steps for renting a car</span>
+	            	</div>
+	            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <section  id="booking" class="ftco-section ftco-no-pt bg-light" >
+    	<div class="container">
+    		<div class="row no-gutters">
+    			<div class="col-md-12	featured-top">
+    				<div class="row no-gutters">
+	  					<div class="col-md-4 d-flex align-items-center">
+                <form class="request-form ftco-animate bg-primary appointment-form">
+                  <h2>Make your trip</h2>
+                  <div class="form-group">
+                  <label class="label">Select Car</label>
+                  <select name="car_id" id="car-select" class="form-control" required>
+                    </select>
+
+                  </select>
+                  </div>
+                  <div class="form-group">
+                    <label class="label">Pick-up location</label>
+                    <input type="text" class="form-control" name="pickup_location" placeholder="City, Airport, Station, etc">
+                  </div>
+                  <div class="form-group">
+                    <label class="label">Drop-off location</label>
+                    <input type="text" class="form-control" name="dropoff_location" placeholder="City, Airport, Station, etc">
+                  </div>
+                  <div class="d-flex">
+                    <div class="form-group mr-2">
+                      <label class="label">Pick-up date</label>
+                      <input type="text" class="form-control" id="book_pick_date" name="pickup_date" placeholder="Date">
+                    </div>
+                    <div class="form-group ml-2">
+                      <label class="label">Drop-off date</label>
+                      <input type="text" class="form-control" id="book_off_date" name="dropoff_date" placeholder="Date">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="label">Pick-up time</label>
+                    <input type="text" class="form-control" id="time_pick" name="pickup_time" placeholder="Time">
+                  </div>
+                  <div class="form-group">
+                    <input type="submit" value="Rent A Car Now" class="btn btn-secondary py-3 px-4">
+                  </div>
+                </form>
+	  					</div>
+	  					<div class="col-md-8 d-flex align-items-center">
+	  						<div class="services-wrap rounded-right w-100">
+	  							<h3 class="heading-section mb-4">Better Way to Rent Your Perfect Cars</h3>
+	  							<div class="row d-flex mb-4">
+					          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+					            <div class="services w-100 text-center">
+				              	<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-route"></span></div>
+				              	<div class="text w-100">
+					                <h3 class="heading mb-2">Choose Your Pickup Location</h3>
+				                </div>
+					            </div>      
+					          </div>
+					          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+					            <div class="services w-100 text-center">
+				              	<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-handshake"></span></div>
+				              	<div class="text w-100">
+					                <h3 class="heading mb-2">Select the Best Deal</h3>
+					              </div>
+					            </div>      
+					          </div>
+					          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+					            <div class="services w-100 text-center">
+				              	<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-rent"></span></div>
+				              	<div class="text w-100">
+					                <h3 class="heading mb-2">Reserve Your Rental Car</h3>
+					              </div>
+					            </div>      
+					          </div>
+					        </div>
+					        <p><a href="car.html" class="btn btn-primary py-3 px-4">Reserve Your Perfect Car</a></p>
+	  						</div>
+	  					</div>
+	  				</div>
+				</div>
+  		</div>
+    </section>
+
+
+    <section class="ftco-section bg-light">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-12 heading-section text-center ftco-animate mb-5">
+        <span class="subheading">What we offer</span>
+        <h2 class="mb-2">Featured Vehicles</h2>
+      </div>
+    </div>
+
+    <div id="car-list" class="row justify-content-center">
+       <div class="row" id="carList"></div>
+    </div>
+  </div>
+</section>
+
+
+    <section class="ftco-section ftco-about">
+			<div class="container">
+				<div class="row no-gutters">
+					<div class="col-md-6 p-md-5 img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/about.jpg);">
+					</div>
+					<div class="col-md-6 wrap-about ftco-animate">
+	          <div class="heading-section heading-section-white pl-md-5">
+	          	<span class="subheading">About us</span>
+	            <h2 class="mb-4">Welcome to Carbook</h2>
+
+	            <p>Welcome to Carbook, your trusted partner in car rental services. Founded with a vision to simplify travel, we provide reliable, affordable, and flexible vehicle rental solutions for individuals, families, and businesses.</p>
+	            <p>Whether you're planning a weekend getaway, a business trip, or need a car for daily errands, we offer a wide range of well-maintained vehicles to suit your needs. From compact sedans to luxury SUVs, our fleet is designed to deliver comfort, safety, and performance.
+At Carbook, we believe in making car rental easy and hassle-free. With simple booking options, transparent pricing, and exceptional customer support, we strive to provide a seamless experience from start to finish.
+Your journey is our priority — and we’re here to drive it forward</p>
+	            <p><a href="car.html" class="btn btn-primary py-3 px-4">Search Vehicle</a></p>
+	          </div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="ftco-section">
+			<div class="container">
+				<div class="row justify-content-center mb-5">
+          <div class="col-md-7 text-center heading-section ftco-animate">
+          	<span class="subheading">Services</span>
+            <h2 class="mb-3">Our Latest Services</h2>
+          </div>
+        </div>
+				<div class="row">
+					<div class="col-md-3">
+						<div class="services services-2 w-100 text-center">
+            	<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-wedding-car"></span></div>
+            	<div class="text w-100">
+                <h3 class="heading mb-2">Wedding Ceremony</h3>
+                <p>Arrive in style on your special day. Our luxury vehicles and professional chauffeurs ensure a grand and memorable entrance for your wedding ceremony.</p>
+              </div>
+            </div>
+					</div>
+					<div class="col-md-3">
+						<div class="services services-2 w-100 text-center">
+            	<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-transportation"></span></div>
+            	<div class="text w-100">
+                <h3 class="heading mb-2">City Transfer</h3>
+                <p>Effortless and comfortable transportation within the city. Whether for business or leisure, our reliable service gets you to your destination efficiently.</p>
+              </div>
+            </div>
+					</div>
+					<div class="col-md-3">
+						<div class="services services-2 w-100 text-center">
+            	<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-car"></span></div>
+            	<div class="text w-100">
+                <h3 class="heading mb-2">Airport Transfer</h3>
+                <p>Stress-free journeys to and from the airport. Enjoy prompt pickups, comfortable rides, and timely drop-offs for a seamless travel experience.</p>
+              </div>
+            </div>
+					</div>
+					<div class="col-md-3">
+						<div class="services services-2 w-100 text-center">
+            	<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-transportation"></span></div>
+            	<div class="text w-100">
+                <h3 class="heading mb-2">Whole City Tour</h3>
+                <p>Explore the best of the city at your own pace. Our private tours offer a comprehensive and comfortable way to discover local landmarks and attractions.</p>
+              </div>
+            </div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="ftco-section ftco-intro" style="background-image: url(images/bg_3.jpg);">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row justify-content-end">
+					<div class="col-md-6 heading-section heading-section-white ftco-animate">
+            <h2 class="mb-3">Travel  with us.</h2>
+            
+          </div>
+				</div>
+			</div>
+		</section>
+
+
+    <section class="ftco-section testimony-section bg-light">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-7 text-center heading-section ftco-animate">
+          	<span class="subheading">Testimonial</span>
+            <h2 class="mb-3">Happy Clients</h2>
+          </div>
+        </div>
+        <div class="row ftco-animate">
+          <div class="col-md-12">
+            <div class="carousel-testimony owl-carousel ftco-owl">
+              <div class="item">
+                <div class="testimony-wrap rounded text-center py-4 pb-5">
+                  <div class="user-img mb-2" style="background-image: url(images/person_1.jpg)">
+                  </div>
+                  <div class="text pt-4">
+                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="name">Roger Scott</p>
+                    <span class="position">Marketing Manager</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap rounded text-center py-4 pb-5">
+                  <div class="user-img mb-2" style="background-image: url(images/person_2.jpg)">
+                  </div>
+                  <div class="text pt-4">
+                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="name">Roger Scott</p>
+                    <span class="position">Interface Designer</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap rounded text-center py-4 pb-5">
+                  <div class="user-img mb-2" style="background-image: url(images/person_3.jpg)">
+                  </div>
+                  <div class="text pt-4">
+                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="name">Roger Scott</p>
+                    <span class="position">UI Designer</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap rounded text-center py-4 pb-5">
+                  <div class="user-img mb-2" style="background-image: url(images/person_1.jpg)">
+                  </div>
+                  <div class="text pt-4">
+                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="name">Roger Scott</p>
+                    <span class="position">Web Developer</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap rounded text-center py-4 pb-5">
+                  <div class="user-img mb-2" style="background-image: url(images/person_1.jpg)">
+                  </div>
+                  <div class="text pt-4">
+                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="name">Roger Scott</p>
+                    <span class="position">System Analyst</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <section class="ftco-counter ftco-section img bg-light" id="section-counter">
+			<div class="overlay"></div>
+    	<div class="container">
+    		<div class="row">
+          <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text text-border d-flex align-items-center">
+                <strong class="number" data-number="60">0</strong>
+                <span>Year <br>Experienced</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text text-border d-flex align-items-center">
+                <strong class="number" data-number="1090">0</strong>
+                <span>Total <br>Cars</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text text-border d-flex align-items-center">
+                <strong class="number" data-number="2590">0</strong>
+                <span>Happy <br>Customers</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text d-flex align-items-center">
+                <strong class="number" data-number="67">0</strong>
+                <span>Total <br>Branches</span>
+              </div>
+            </div>
+          </div>
+        </div>
+    	</div>
+    </section>	
+
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2"><a href="#" class="logo">Car<span>book</span></a></h2>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-5">
+              <h2 class="ftco-heading-2">Information</h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-2 d-block">About</a></li>
+                <li><a href="#" class="py-2 d-block">Services</a></li>
+                <li><a href="#" class="py-2 d-block">Term and Conditions</a></li>
+                <li><a href="#" class="py-2 d-block">Best Price Guarantee</a></li>
+                <li><a href="#" class="py-2 d-block">Privacy &amp; Cookies Policy</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Customer Support</h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-2 d-block">FAQ</a></li>
+                <li><a href="#" class="py-2 d-block">Payment Option</a></li>
+                <li><a href="#" class="py-2 d-block">Booking Tips</a></li>
+                <li><a href="#" class="py-2 d-block">How it works</a></li>
+                <li><a href="#" class="py-2 d-block">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Have a Questions?</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
+	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
+	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+      
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+ <script src="js/auth.js"></script>
+  <script src="js/main.js"></script>
+ 
+
+<script>
+  function convertTo24Hour(timeStr) {
+    const [time, modifier] = timeStr.toLowerCase().split(/(am|pm)/);
+    let [hours, minutes] = time.trim().split(':').map(Number);
+
+    if (modifier === 'pm' && hours < 12) hours += 12;
+    if (modifier === 'am' && hours === 12) hours = 0;
+
+    return `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}`;
+  }
+
+  function formatToISO(dateStr) {
+    const date = new Date(dateStr);
+    return date.toISOString().split('T')[0]; // Format: YYYY-MM-DD
+  }
+
+  // ✅ Check car availability before booking
+  async function checkAvailability(carId, pickupDate, dropoffDate) {
+    try {
+      const res = await fetch('http://localhost:5000/api/v1/bookings/check-availability', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ carId, pickupDate, dropoffDate })
+      });
+
+      const data = await res.json();
+      if (res.ok) return data.available;
+
+      alert(data.message || 'Error checking availability');
+      return false;
+    } catch (err) {
+      console.error('❌ Error checking availability:', err);
+      alert('❌ Could not check availability. Try again.');
+      return false;
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const bookingForm = document.querySelector('.appointment-form');
+    if (bookingForm) {
+      bookingForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const formData = new FormData(bookingForm);
+        const bookingData = {
+          carId: formData.get('car_id'),
+          pickupLocation: formData.get('pickup_location'),
+          dropoffLocation: formData.get('dropoff_location'),
+          pickupDate: formatToISO(formData.get('pickup_date')),
+          dropoffDate: formatToISO(formData.get('dropoff_date')),
+          pickupTime: convertTo24Hour(formData.get('pickup_time'))
+        };
+
+        console.log('📦 Data being sent to backend:', bookingData);
+
+        // ✅ Check availability first
+        const isAvailable = await checkAvailability(
+          bookingData.carId,
+          bookingData.pickupDate,
+          bookingData.dropoffDate
+        );
+
+        if (!isAvailable) {
+          alert('❌ Car is not available for selected dates.');
+          return;
+        }
+
+        const token = localStorage.getItem('token');
+
+        try {
+          const response = await fetch('http://localhost:5000/api/v1/bookings', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'Authorization': `Bearer ${token}`
+            },
+            body: JSON.stringify(bookingData)
+          });
+
+          const result = await response.json();
+
+          if (response.ok) {
+            alert('✅ Booking submitted successfully!');
+            bookingForm.reset();
+          } else {
+            alert(`❌ Booking failed: ${result.message || 'Unknown error'}`);
+          }
+        } catch (error) {
+          console.error('❌ Error submitting booking:', error);
+          alert('❌ Network or server error. Try again.');
+        }
+      });
+    }
+  });
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const carListContainer = document.getElementById('carList');
+  if (!carListContainer) {
+    console.error("❌ #carList container not found!");
+    return;
+  }
+
+  fetch('http://localhost:5000/api/v1/cars')
+    .then(async response => {
+      const data = await response.json();
+      if (!response.ok) throw new Error(data.message || 'Failed to load cars');
+
+      // ✅ If backend returns data as { data: [...] }
+      const cars = Array.isArray(data) ? data : data.data || [];
+
+      carListContainer.innerHTML = ''; // Clear old content
+
+      cars.forEach(car => {
+        // 1️⃣ Get image or default
+        let imageUrl = car.image ? car.image.trim() : 'uploads/default-car.jpg';
+
+        // 2️⃣ Remove any duplicate "http://localhost:5000/"
+        imageUrl = imageUrl.replace(/(http:\/\/localhost:5000\/)+/g, 'http://localhost:5000/');
+
+        // 3️⃣ If not full URL, prepend backend URL
+        if (!/^https?:\/\//i.test(imageUrl)) {
+  // If it's a relative path, prepend backend URL
+  imageUrl = `http://localhost:5000/${imageUrl.replace(/^\/+/, '')}`;
+}
+        // 4️⃣ Create card HTML
+        const carCard = document.createElement('div');
+        carCard.className = 'col-md-4 d-flex ftco-animate';
+        carCard.innerHTML = `
+          <div class="car-wrap rounded">
+            <div class="img rounded d-flex align-items-end"
+                 style="background-image: url('${imageUrl}');"
+                 onerror="this.style.backgroundImage='url(http://localhost:5000/uploads/default-car.jpg)'">
+            </div>
+            <div class="text">
+              <h2 class="mb-0"><a href="#">${car.brand} ${car.name}</a></h2>
+              <div class="d-flex mb-3">
+                <span class="cat">${car.transmission}</span>
+                <p class="price ml-auto">₹${car.pricePerDay} <span>/day</span></p>
+              </div>
+              <p class="d-flex mb-0 d-block">
+             <a href="index.html#booking" 
+   class="btn btn-primary py-2 mr-1 book-now-btn" 
+   data-car-id="${car._id}">
+   Book now
+</a>
+              <a href="car.html" class="btn btn-secondary py-2 ml-1">Details</a>
+              </p>
+            </div>
+          </div>
+        `;
+
+        carListContainer.appendChild(carCard);
+      });
+    })
+    .catch(err => {
+      console.error('❌ Failed to load cars:', err);
+      carListContainer.innerHTML = '<p class="text-danger">❌ Failed to load cars. Please try again later.</p>';
+    });
+});
+</script>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+        const populateCarSelect = async () => {
+            try {
+                const response = await fetch('http://localhost:5000/api/v1/cars');
+                const data = await response.json();
+                const cars = data.data || data || [];
+
+                const carSelect = document.getElementById('car-select');
+
+                // Clear existing options (except the default "Select a Car" one)
+                carSelect.innerHTML = '<option value="">-- Select a Car --</option>';
+
+                // Loop through the cars and add them to the select dropdown
+                cars.forEach(car => {
+                    const option = document.createElement('option');
+                    option.value = car._id; // Use the unique car ID as the value
+                    option.textContent = car.name; // Display the car's name
+                    carSelect.appendChild(option);
+                });
+            } catch (error) {
+                console.error('Error fetching cars for the select dropdown:', error);
+            }
+        };
+
+        // Call the function to populate the dropdown when the page loads
+        populateCarSelect();
+        });
+  </script>
+<script>
+document.addEventListener('click', (e) => {
+    if (e.target.classList.contains('book-now-btn')) {
+        e.preventDefault();
+        
+        const carId = e.target.getAttribute('data-car-id');
+        const carSelectDropdown = document.getElementById('car-select');
+        
+        // Save selected car ID in localStorage so it persists across pages
+        if (carId) {
+            localStorage.setItem('selectedCarId', carId);
+        }
+
+        // If dropdown exists on the current page, update it immediately
+        if (carSelectDropdown && carId) {
+            carSelectDropdown.value = carId;
+            document.querySelector('#booking').scrollIntoView({ behavior: 'smooth' });
+        } else {
+            // If on a different page, redirect to index.html#booking
+            window.location.href = "index.html#booking";
+        }
+    }
+});
+</script>
+<script>
+  // When page loads, check if a car ID was saved from another page
+document.addEventListener('DOMContentLoaded', () => {
+    const savedCarId = localStorage.getItem('selectedCarId');
+    const carSelectDropdown = document.getElementById('car-select');
+    
+    if (savedCarId && carSelectDropdown) {
+        carSelectDropdown.value = savedCarId;
+        localStorage.removeItem('selectedCarId'); // Clear after using
+    }
+});
+</script>
+
+  </body>
+</html>
